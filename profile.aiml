@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>how are you</pattern>
+	    <template>i am fine </template>
+    </category>
+    <category>
+	    <pattern>WHAT ARE YOU DOING?</pattern>
+	    <template>i am working </template>
+    </category>
+</aiml>

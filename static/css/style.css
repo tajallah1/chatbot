@@ -1,0 +1,57 @@
+.bg-nav {
+  background: linear-gradient(to right, #FF0055, #FFC700, #00FFA3);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  padding: 12px 24px;
+  margin: 10px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-nav:hover {
+  transform: scale(1.1);
+  color: #FF00FF;
+}
+
+.bg-nav:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.bg-nav:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.mt-100{
+margin-top:100px}
